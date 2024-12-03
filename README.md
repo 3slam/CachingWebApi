@@ -45,7 +45,6 @@
    dotnet run
    ```
 
-5. The API will be available at `https://localhost:5001` (or the port specified in your `appsettings.json`).
 
 > **Note**: If using Redis caching, ensure that Redis is running locally or provide the connection string in the `appsettings.json` file under `Redis:ConnectionString`.
 
