@@ -5,7 +5,7 @@ namespace CachingWebApi.Controllers;
  
 [Route("api/[controller]")]
 [ApiController]
-public class RedisCacheCacheController(IAsyncCacheService redisCacheService) : ControllerBase
+public class RedisCacheController(IAsyncCacheService redisCacheService) : ControllerBase
 { 
     [HttpPost("add")]
     public async Task<IActionResult> AddToCache([FromQuery] string key, [FromBody] string value)
